@@ -32,6 +32,7 @@
         };
     };
 
+
     macros {
         screen_shot_macro: screen_shot_macro {
             compatible = "zmk,behavior-macro";
@@ -51,6 +52,7 @@
             bindings = <&macro_tap>, <&kp LCTRL &kp SPACE>;
         };
     };
+
 
     combos {
         compatible = "zmk,combos";
@@ -96,6 +98,7 @@
             bindings = <&kp language>;
         };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
