@@ -61,6 +61,11 @@
             key-positions = <36 37>;
             bindings = <&kp LANG2>;
         };
+
+        combo_language {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
