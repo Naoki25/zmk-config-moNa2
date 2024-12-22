@@ -13,26 +13,6 @@
 };
 
 / {
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&screen_shot_macro>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-        };
-
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-    };
-
-
     macros {
         screen_shot_macro: screen_shot_macro {
             compatible = "zmk,behavior-macro";
@@ -96,6 +76,26 @@
         combo_lang {
             key-positions = <33 34>;
             bindings = <&kp language>;
+        };
+    };
+
+
+    behaviors {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&screen_shot_macro>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
+
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
         };
     };
 
