@@ -74,7 +74,7 @@
             bindings = <&mo>, <&screen_shot_macro>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <400>;
         };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
