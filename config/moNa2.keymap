@@ -21,6 +21,46 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        combo_ctrl_a {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp LC(A)>;
+        };
+
+        combo_ctrl_z {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LC(Z)>;
+        };
+
+        combo_ctrl_x {
+            timeout-ms = <50>;
+            key-positions = <24 25>;
+            bindings = <&kp LC(X)>;
+        };
+
+        combo_ctrl_c {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+            bindings = <&kp LC(C)>;
+        };
+
+        combo_ctrl_v {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp LC(V)>;
+        };
+
+        combo_lang1 {
+            key-positions = <35 36>;
+            bindings = <&kp LANG1>;
+        };
+
+        combo_lang2 {
+            key-positions = <36 37>;
+            bindings = <&kp LANG2>;
+        };
     };
 
     macros {
