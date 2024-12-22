@@ -13,6 +13,47 @@
 };
 
 / {
+    behaviors {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&screen_shot_macro>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
+
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
+        };
+    };
+
+
+    macros {
+        screen_shot_macro: screen_shot_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+        };
+
+        ctrl_a: ctrl_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LCTRL &kp A>;
+        };
+
+        language: language {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LCTRL &kp SPACE>;
+        };
+    };
+
+
     combos {
         compatible = "zmk,combos";
 
@@ -25,7 +66,7 @@
         combo_ctrl_a {
             timeout-ms = <50>;
             key-positions = <13 14>;
-            bindings = <&kp LC(A)>;
+            bindings = <&kp ctrl_a>;
         };
 
         combo_ctrl_z {
@@ -52,43 +93,12 @@
             bindings = <&kp LC(V)>;
         };
 
-        combo_lang1 {
-            key-positions = <35 36>;
-            bindings = <&kp LANG1>;
-        };
-
-        combo_lang2 {
-            key-positions = <36 37>;
-            bindings = <&kp LANG2>;
+        combo_lang {
+            key-positions = <33 34>;
+            bindings = <&kp language>;
         };
     };
 
-    macros {
-        screen_shot_macro: screen_shot_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
-        };
-    };
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&screen_shot_macro>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-        };
-
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
