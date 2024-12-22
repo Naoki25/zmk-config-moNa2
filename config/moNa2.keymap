@@ -13,15 +13,20 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
 
     macros {
         screen_shot_macro: screen_shot_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HASH>, <&macro_press>, <&kp LG(LC(S))>;
-
-            label = "SCREEN_SHOT_MACRO";
+            bindings = <&macro_tap &kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
         };
     };
 
@@ -52,7 +57,7 @@
 &kp Q               &kp L         &kp U         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                          &kp F      &kp W  &kp R  &kp Y  &kp P
 &kp E               &kp I         &kp A         &kp O                 &kp MINUS              &kp AT_SIGN              &kp COMMA      &kp K      &kp T  &kp N  &kp S  &kp H
 &mt LEFT_SHIFT ESC  &kp Z         &kp X         &kp C                 &kp V                  &lt 4 EXCLAMATION        &kp PERIOD     &kp G      &kp D  &kp M  &kp J  &kp B
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 TAB             &lt 2 SPACE            &lt 3 INTERNATIONAL_1    &kp BACKSPACE  &kp ENTER                       &kp HASH
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 TAB             &lt 2 SPACE            &lt 3 INTERNATIONAL_1    &kp BACKSPACE  &kp ENTER                       &screen_shot_macro
             >;
 
             sensor-bindings = <&scroll_up_down>;
