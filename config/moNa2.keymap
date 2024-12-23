@@ -64,6 +64,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+
+            wait-ms = <10>;
         };
     };
 
