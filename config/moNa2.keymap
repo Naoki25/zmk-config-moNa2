@@ -64,9 +64,7 @@
         screen_shot_macro: screen_shot_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
-
-            wait-ms = <10>;
+            bindings = <&macro_press &kp LEFT_WIN>, <&macro_press &kp LEFT_SHIFT>, <&kp S>;
         };
     };
 
