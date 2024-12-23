@@ -123,7 +123,7 @@
             bindings = <
 &kp QUESTION     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMICOLON)                              &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp PLUS       &kp DOLLAR
 &kp EXCLAMATION  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &trans       &kp AT_SIGN    &kp UNDERSCORE    &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LESS_THAN  &kp GREATER_THAN
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp GRAVE          &kp SLASH    &kp AMPERSAND  &kp INT_RO        &kp RIGHT_BRACE    &kp PIPE              &kp EQUAL      &kp INT3
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOUBLE_QUOTES  &kp SLASH    &kp AMPERSAND  &kp LS(INT_RO)    &kp RIGHT_BRACE    &kp PIPE              &kp EQUAL      &kp INT3
 &kp CARET        &kp HASH         &kp PERCENT      &trans           &trans             &trans       &kp SEMICOLON  &kp SQT                                                                   &kp LS(INT_YEN)
             >;
 
