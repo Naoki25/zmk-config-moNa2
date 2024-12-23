@@ -14,9 +14,7 @@
     retro-tap;
 };
 
-&lt {
-    tapping-term-ms = <400>;
-};
+&lt { tapping-term-ms = <400>; };
 
 / {
     combos {
@@ -101,10 +99,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp L           &kp U           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                    &kp F        &kp W              &kp R            &kp Y            &kp P
-&kp E        &mt LEFT_WIN I  &mt LEFT_ALT A  &mt LEFT_SHIFT O      &kp MINUS              &trans               &kp COMMA                    &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RIGHT_WIN S  &kp H
-&kp AT_SIGN  &kp Z           &kp X           &kp C                 &kp V                  &lt 4 EXCLAMATION    &kp PERIOD                   &kp G        &kp D              &kp M            &kp J            &kp B
-&kp LCTRL    &kp LEFT_WIN    &kp LEFT_ALT    &lt 1 TAB             &lt 2 SPACE            &lt 3 DEL            &mt RIGHT_CONTROL BACKSPACE  &lt 4 ENTER                                                       &screen_shot_macro
+&kp Q        &kp L               &kp U           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                    &kp F        &kp W              &kp R            &kp Y                &kp P
+&kp E        &mt LEFT_CONTROL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O      &kp MINUS              &trans               &kp COMMA                    &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RIGHT_CONTROL S  &kp H
+&kp AT_SIGN  &kp Z               &kp X           &kp C                 &kp V                  &lt 4 EXCLAMATION    &kp PERIOD                   &kp G        &kp D              &kp M            &kp J                &kp B
+&kp LCTRL    &kp LEFT_WIN        &kp LEFT_ALT    &lt 1 TAB             &lt 2 SPACE            &lt 3 DEL            &mt RIGHT_CONTROL BACKSPACE  &lt 4 ENTER                                                           &screen_shot_macro
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -112,10 +110,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+&trans     &trans     &kp LC(F)  &kp LC(A)  &trans                                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &screen_shot_macro  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans     &trans     &trans     &trans     &trans              &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
+&trans     &trans     &trans     &trans     &trans              &trans    &trans  &trans                          &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
