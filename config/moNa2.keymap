@@ -120,7 +120,7 @@
 &kp Q            &kp L             &kp U           &kp LS(N8)        &kp LEFT_PARENTHESIS                                 &kp F        &kp W              &kp R            &kp Y            &kp P
 &kp E            &mt LEFT_WIN I    &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS             &trans          &kp COMMA      &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RIGHT_WIN S  &kp H
 &kp KP_NUMBER_0  &kp Z             &kp X           &kp C             &kp V                 &lt 5 ESCAPE    &kp PERIOD     &kp G        &kp D              &kp M            &kp J            &kp B
-&kp LEFT_GUI     &kp LEFT_CONTROL  &kp LEFT_ALT    &lt 4 TAB         &lt 3 SPACE           &lt 6 DEL       &kp BACKSPACE  &lt 2 ENTER                                                       &kp INT_YEN
+&kp LEFT_GUI     &kp LEFT_CONTROL  &kp LEFT_ALT    &lt 4 TAB         &lt 3 SPACE           &lt 7 DEL       &kp BACKSPACE  &lt 2 ENTER                                                       &kp INTERNATIONAL_4
             >;
 
             sensor-bindings = <&scroll_up_down>;
