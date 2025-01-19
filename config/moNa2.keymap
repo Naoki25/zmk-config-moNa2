@@ -110,6 +110,17 @@
 
         layer_1 {
             bindings = <
+&kp Q            &kp L               &kp U           &kp LS(N8)        &kp LEFT_PARENTHESIS                                 &kp F        &kp W              &kp R            &kp Y                &kp P
+&kp E            &mt LEFT_CONTROL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS             &trans          &kp COMMA      &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RIGHT_CONTROL S  &kp H
+&kp KP_NUMBER_0  &kp Z               &kp X           &kp C             &kp V                 &lt 4 ESCAPE    &kp PERIOD     &kp G        &kp D              &kp M            &kp J                &kp B
+&kp LCTRL        &kp LEFT_WIN        &kp LEFT_ALT    &lt 3 TAB         &lt 2 SPACE           &lt 5 DEL       &kp BACKSPACE  &lt 1 ENTER                                                           &kp LC(SPACE)
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_2 {
+            bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &trans    &trans    &kp PAGE_UP    &trans    &trans
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans  &kp HOME  &mkp MB1  &mkp MB3       &mkp MB2  &kp END
 &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &trans    &trans    &kp PAGE_DOWN  &trans    &trans
@@ -119,7 +130,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_2 {
+        layer_3 {
             bindings = <
 &kp QUESTION     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMICOLON)                              &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp PLUS       &kp DOLLAR
 &kp EXCLAMATION  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &trans       &kp AT_SIGN    &kp UNDERSCORE    &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LESS_THAN  &kp GREATER_THAN
@@ -130,7 +141,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans                  &kp LC(LS(UP_ARROW))    &trans                   &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &kp LS(LC(LEFT_ARROW))  &kp LC(LS(DOWN_ARROW))  &kp LC(LS(RIGHT_ARROW))  &trans
@@ -141,7 +152,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_4 {
+        layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans        &trans        &trans        &trans        &trans
@@ -152,7 +163,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_5 {
+        layer_6 {
             bindings = <
 &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &kp LC(K_SELECT)  &kp LC(K_FIND)   &trans                                &kp K_LOCK  &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD    &kp K_APPLICATION
 &kp LC(K_UNDO)    &kp LC(K_CUT)      &kp LC(K_COPY)    &kp LC(K_PASTE)  &screen_shot_macro  &trans    &trans  &trans      &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &trans
