@@ -145,7 +145,7 @@
 &kp CARET        &kp HASH         &kp PERCENT      &trans           &trans             &trans       &kp SEMICOLON  &kp SQT                                                                   &kp LS(INT_YEN)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_4 {
@@ -156,7 +156,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                                                                           &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_5 {
