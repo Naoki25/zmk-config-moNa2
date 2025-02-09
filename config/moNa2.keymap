@@ -144,10 +144,10 @@
 
         layer_2 {
             bindings = <
-&trans          &kp AMPERSAND    &kp QUESTION  &kp INT3   &trans                              &trans         &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp EQUAL      &kp LS(INT_YEN)
-&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp LEFT_BRACKET  &trans    &trans  &kp SEMICOLON  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LESS_THAN  &kp GREATER_THAN
-&trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &trans            &trans    &trans  &kp SQT        &kp RIGHT_BRACE    &kp PIPE              &kp PLUS       &kp LS(INT1)
-&trans          &trans           &trans        &trans     &trans            &trans    &trans  &trans                                                                 &trans
+&trans          &kp AMPERSAND    &kp QUESTION  &kp INT3   &trans                    &trans         &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp EQUAL      &kp LS(INT_YEN)
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET  &trans  &trans    &trans  &kp SEMICOLON  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LESS_THAN  &kp GREATER_THAN
+&trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &trans  &trans    &trans  &kp SQT        &kp RIGHT_BRACE    &kp PIPE              &kp PLUS       &kp LS(INT1)
+&trans          &trans           &trans        &trans     &trans  &trans    &trans  &trans                                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
