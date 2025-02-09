@@ -177,10 +177,10 @@
 
         layer_5 {
             bindings = <
-&kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &kp LC(K_SELECT)  &kp LC(K_FIND)   &trans                                &kp K_LOCK  &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD    &kp K_APPLICATION
-&kp LC(K_UNDO)    &kp LC(K_CUT)      &kp LC(K_COPY)    &kp LC(K_PASTE)  &screen_shot_macro  &trans    &trans  &trans      &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &trans
-&kp K_AGAIN       &kp C_AC_SAVE      &kp C_AC_PRINT    &kp C_AC_SEARCH  &kp INSERT          &trans    &trans  &trans      &kp K_CALC    &kp C_BRI_DEC      &kp C_BRIGHTNESS_INC  &trans
-&trans            &trans             &trans            &trans           &trans              &trans    &trans  &trans                                                             &trans
+&kp QUESTION     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                                &kp K_LOCK  &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD    &kp K_APPLICATION
+&kp EXCLAMATION  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &screen_shot_macro  &trans    &trans  &trans      &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp INSERT          &trans    &trans  &trans      &kp K_CALC    &kp C_BRI_DEC      &kp C_BRIGHTNESS_INC  &trans
+&trans           &trans           &trans           &trans           &trans              &trans    &trans  &trans                                                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
